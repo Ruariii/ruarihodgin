@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "title": "Mars Rover Design and Build",
+        "date": "09/2018",
+        "keywords": ["CAD", "Robotics", "Simulation"],
+        "description": "Designed and built a Mars rover prototype using CAD software. The project involved creating detailed 3D models, simulating the rover's movement on Martian terrain, and testing its capabilities in various scenarios.",
+        "image": ""
+    },
+    {
+        "id": "2",
+        "title": "EPSRC Vacation Award Internship",
+        "date": "06/2020",
+        "keywords": ["Academic Research", "MATLAB", "3D Printing", "CAD"],
+        "description": "Explored eddy-current sensor applications for wear detection in joint replacements as part of medical research.",
+        "image": ""
+    }          
+]
