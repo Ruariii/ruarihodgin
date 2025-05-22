@@ -1,0 +1,18 @@
+{% block content %}
+
+{% for project in projects %}
+    <a 
+        href="{{ url_for('project_detail', project_id=project.id) }}"
+        class="block p-6 border rounded-lg shadow hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:hover:shadow-blue-500"
+    >
+        <h3 class="text-xl font-semibold mb-1 text-blue-700 dark:text-blue-300">{{ project.title }}</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">{{ project.date }}</p>
+        <div class="flex flex-wrap gap-2 text-sm text-gray-800 dark:text-gray-300">
+            {% for keyword in project.keywords %}
+                <span class="bg-gray-200 dark:bg-gray-700 px-2 py-0.5 rounded-full">{{ keyword }}</span>
+            {% endfor %}
+        </div>
+    </a>
+{% endfor %}
+
+{% endblock %}

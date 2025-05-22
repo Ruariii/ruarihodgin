@@ -1,9 +1,12 @@
 # app.py
 
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, request, abort
 from projects_model import ProjectModel
+from datetime import datetime
+import os
 
 app = Flask(__name__)
+app.secret_key = os.urandom(12)
 model = ProjectModel()
 model.load_db()
 
@@ -11,11 +14,32 @@ model.load_db()
 def index():
     return render_template('index.html')
 
-@app.route('/projects')
-def projects():
-    all_projects = model.all()
-    print(all_projects)
+@app.route("/projects")
+def contacts():
+    search = request.args.get("q")
+    if search is not None:
+        all_projects  = model.search(search)
+        all_projects.sort(key=lambda p: datetime.strptime(p.date, "%m/%Y"), reverse=True)
+        if request.headers.get('HX-Trigger') == 'search':
+            #render only rows
+            return render_template("list.html", projects=all_projects)
+    else:
+        all_projects = model.all()
+        all_projects.sort(key=lambda p: datetime.strptime(p.date, "%m/%Y"), reverse=True)
     return render_template('projects.html', projects=all_projects)
+    
+    
+@app.route('/projects/count')
+def projects_count():
+    search = request.args.get("q")
+    if search:
+        print(search)
+        count = len(model.search(search))
+        print(count)
+    else:
+        count = model.count()
+    return f"{count} project{'s' if count != 1 else ''} found"
+
 
 @app.route('/project/<project_id>')
 def project_detail(project_id):

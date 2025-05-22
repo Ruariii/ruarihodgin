@@ -45,12 +45,12 @@ class ProjectModel:
 
     @classmethod
     def search(cls, text):
-        result = []
+        text = text.lower()
+        result = list()
         for c in cls.db.values():
-            match_title = c.title is not None and text in c.title
+            match_title = c.title is not None and text in c.title.lower()
             match_date = c.date is not None and text in c.date
-            match_description = c.description is not None and text in c.description
-            match_keywords = c.keywords is not None and text in c.keywords
-            if match_title or match_date or match_description or match_keywords:
+            match_keywords = c.keywords is not None and any(text in kw.lower() for kw in c.keywords or [])
+            if match_title or match_date or match_keywords:
                 result.append(c)
         return result
