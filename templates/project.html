@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="max-w-4xl mx-auto px-6 py-12 bg-white dark:bg-gray-900 shadow-lg rounded-lg">
+
+    <!-- Project Title and Date -->
+    <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+        {{ project.title }}
+    </h1>
+    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+        {{ project.date }}
+    </p>
+
+    <!-- Project Keywords -->
+    {% if project.keywords %}
+    <div class="mb-6">
+        <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Keywords:</span>
+        <ul class="flex flex-wrap gap-2 mt-2">
+            {% for keyword in project.keywords %}
+                <li class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                    {{ keyword }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <!-- Project Description -->
+    <div class="space-y-4 mb-4">
+        {% for paragraph in project.description %}
+            <p class="text-gray-700 dark:text-gray-300">{{ paragraph }}</p>
+        {% endfor %}
+    </div>
+
+    <!-- Project Images -->
+    {% if project.images %}
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        {% for img in project.images %}
+            <div class="aspect-w-16 aspect-h-9 relative">
+            <img 
+                src="{{ img }}" 
+                alt="{{ project.title }} image" 
+                class="w-full h-full object-cover rounded-lg shadow-md"
+            >
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Navigation Buttons -->
+    <div class="flex justify-between">
+        {% if prev_id %}
+            <a href="{{ url_for('project_detail', project_id=prev_id.id) }}"
+               class="px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-white rounded shadow">
+                ← Previous Project
+            </a>
+        {% else %}
+            <button disabled
+                    class="px-4 py-2 bg-gray-100 text-gray-400 rounded shadow cursor-not-allowed">
+                ← Previous Project
+            </button>
+        {% endif %}
+
+        {% if next_id %}
+            <a href="{{ url_for('project_detail', project_id=next_id.id) }}"
+               class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded shadow">
+                Next Project →
+            </a>
+        {% else %}
+            <button disabled
+                    class="px-4 py-2 bg-gray-100 text-gray-400 rounded shadow cursor-not-allowed">
+                Next Project →
+            </button>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Related Projects Carousel -->
+{% if related_projects %}
+<div class="mt-12">
+    <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Related Projects</h2>
+    
+    <div class="overflow-x-auto">
+        <div class="flex gap-6">
+            {% for rp in related_projects[:10] %}  {# limit to 10 related items #}
+            <a href="{{ url_for('project_detail', project_id=rp.id) }}"
+               class="flex-shrink-0 w-64 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">{{ rp.title }}</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">{{ rp.date }}</p>
+                {% if rp.image %}
+                    <img src="{{ rp.image }}" alt="{{ rp.title }}" class="mt-3 rounded-md object-cover h-32 w-full">
+                {% endif %}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% endblock %}

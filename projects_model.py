@@ -7,13 +7,14 @@ class ProjectModel:
 
     db = {}
 
-    def __init__(self, id_=None, title=None, date=None, description=None, keywords=None, image=None):
+    def __init__(self, id_=None, title=None, date=None, description=None, keywords=None, images=None, featured=None):
         self.id = id_
         self.title = title
         self.date = date
         self.description = description
         self.keywords = keywords
-        self.image = image
+        self.images = images
+        self.featured = featured
 
     def __str__(self):
         return json.dumps(self.__dict__, ensure_ascii=False)
@@ -24,7 +25,7 @@ class ProjectModel:
             projects = json.load(projects_file)
             cls.db.clear()
             for c in projects:
-                cls.db[c['id']] = ProjectModel(c['id'], c['title'], c['date'], c['description'], c['keywords'], c['image'])
+                cls.db[c['id']] = ProjectModel(c['id'], c['title'], c['date'], c['description'], c['keywords'], c['images'], c['featured'])
 
     @classmethod
     def count(cls):

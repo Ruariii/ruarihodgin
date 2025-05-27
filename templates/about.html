@@ -1,0 +1,57 @@
+<!-- templates/about.html -->
+{% extends "layout.html" %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+
+<!-- Title -->
+<h1 class="text-4xl font-bold mb-6 text-center">About Me</h1>
+
+<!-- Biography + Profile Picture -->
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row items-start gap-8 mb-10">
+    <img src="/static/images/headshot.JPG" alt="Profile picture"
+         class="w-48 h-48 rounded-full object-cover shadow-md mx-auto md:mx-0">
+    <div class="text-lg leading-relaxed">
+        <p class="mt-4">
+            I’m a multidisciplinary engineer with a First-Class MEng in Aeronautical & Aerospace Engineering from the University of Leeds and several years of hands-on experience in product development, mechanical design, and technical problem-solving. My work spans physical and digital domains, from developing precision medical devices to building full-stack web applications that visualise engineering data. 
+        </p>
+        <p class="mt-4">
+            Currently, I work as a Design Engineer at Lucid Innovation, where I’ve contributed to projects involving advanced manufacturing, embedded systems, and user-centred design. I’ve led the development of functional prototypes using SLA 3D printing, created custom tooling for small-batch production, and designed algorithms to automate device configuration based on user data—all while collaborating with engineers, developers, and stakeholders to bring high-quality products to life. 
+        </p>
+        <p class="mt-4">
+            At university, I led aerodynamic optimisation for a novel wing concept in an industry-sponsored research project, coordinated simulation workflows, and presented technical findings to both academic and non-technical audiences. My background also includes CFD analysis, structural simulation, and control systems design. 
+        </p>
+        <p class="mt-4">
+            What defines my approach is a balance of creativity and rigour. I’m driven by curiosity and take pride in designing robust, thoughtful solutions that perform reliably in real-world conditions. Whether I’m writing Python to analyse sensor data, optimising a mechanical assembly, or discussing design decisions with cross-functional teams, I bring a clear, communicative, and detail-oriented mindset. I’m especially passionate about sustainability, high-precision engineering, and technologies that make a meaningful difference—areas that align closely with sectors like renewable energy, aerospace, and MedTech. My work has taken me from wind tunnel testing and wearable sensor design to field demos with elite sports teams and collaborative research with postdoctoral scientists. I'm always looking for opportunities to contribute to innovative projects where design thinking, systems engineering, and user empathy come together to solve challenging problems.
+        </p>
+        </div>
+</div>
+
+<!-- Project Carousel -->
+<div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-semibold mb-4">Featured Projects</h2>
+    <div class="overflow-x-auto scroll-smooth snap-x snap-mandatory">
+        <div class="flex gap-6">
+            {% for project in projects if project.featured %}
+            <a href="{{ url_for('project_detail', project_id=project.id) }}"
+               class="snap-start flex-shrink-0 w-64 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="{{ project.images[0] }}" alt="{{ project.title }}" class="h-40 w-full object-cover">
+                <div class="p-3">
+                    <h3 class="font-semibold text-lg">{{ project.title }}</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">{{ project.date }}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Contact Info -->
+<div class="mt-12 text-center text-lg">
+    <h2 class="text-2xl font-semibold mb-2">Contact</h2>
+    <p>Email: <a href="mailto:you@example.com" class="text-blue-600 dark:text-blue-400 hover:underline">you@example.com</a></p>
+    <p>Mobile: <a href="tel:+441234567890" class="text-blue-600 dark:text-blue-400 hover:underline">+44 1234 567890</a></p>
+</div>
+
+{% endblock %}

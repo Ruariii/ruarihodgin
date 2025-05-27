@@ -17,14 +17,42 @@
 <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300"
         hx-boost="true" >
 
-    <!-- Navbar -->
-    <nav class="w-full px-6 py-4 bg-gray-100 dark:bg-gray-800 shadow-md flex items-center justify-between">
-        <h1 class="text-2xl font-semibold tracking-wide">Ruari Hodgin: MEng</h1>
-        <div class="space-x-4 text-lg">
-            <a href="/" class="hover:text-blue-600">About</a>
-            <a href="/projects" class="hover:text-blue-600">Projects</a>
+    <!-- Responsive Navbar -->
+    <nav x-data="{ open: false }" class="w-full px-6 py-4 bg-gray-100 dark:bg-gray-800 shadow-md">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="/">
+                <h1 class="text-2xl font-semibold tracking-wide">Ruari Hodgin: MEng</h1>
+            </a>
+
+            <!-- Hamburger (mobile only) -->
+            <button @click="open = !open" class="md:hidden text-gray-700 dark:text-gray-200 focus:outline-none">
+                <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+                <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <!-- Links (desktop only) -->
+            <div class="hidden md:flex space-x-4 text-lg">
+                <a href="/about" class="hover:text-blue-600">About</a>
+                <a href="/projects" class="hover:text-blue-600">Projects</a>
+            </div>
+        </div>
+
+        <!-- Links (mobile dropdown) -->
+        <div x-show="open" x-transition class="md:hidden mt-4 space-y-2 text-lg">
+            <a href="/about" class="block hover:text-blue-600">About</a>
+            <a href="/projects" class="block hover:text-blue-600">Projects</a>
         </div>
     </nav>
+
 
     <!-- Main Content -->
     <main class="px-4 md:px-10 py-6">

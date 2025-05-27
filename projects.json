@@ -1,18 +1,127 @@
 [
     {
-        "id": "1",
-        "title": "Mars Rover Design and Build",
-        "date": "09/2018",
-        "keywords": ["CAD", "Robotics", "Simulation"],
-        "description": "Designed and built a Mars rover prototype using CAD software. The project involved creating detailed 3D models, simulating the rover's movement on Martian terrain, and testing its capabilities in various scenarios.",
-        "image": ""
+      "id": 1,
+      "title": "Mars Rover Design and Build",
+      "date": "09/2018",
+      "keywords": ["CAD", "Robotics", "Simulation"],
+      "description": [
+        "Designed and built a Mars rover prototype using CAD software. The project involved creating detailed 3D models, simulating the rover's movement on Martian terrain, and testing its capabilities in various scenarios."
+      ],
+      "images": [],
+      "featured": false
     },
     {
-        "id": "2",
-        "title": "EPSRC Vacation Award Internship",
-        "date": "06/2020",
-        "keywords": ["Academic Research", "MATLAB", "3D Printing", "CAD"],
-        "description": "Explored eddy-current sensor applications for wear detection in joint replacements as part of medical research.",
-        "image": ""
-    }          
-]
+      "id": 2,
+      "title": "EPSRC Vacation Award Internship",
+      "date": "06/2020",
+      "keywords": ["Academic Research", "MATLAB", "3D Printing", "CAD"],
+      "description": [
+        "Explored eddy-current sensor applications for wear detection in joint replacements as part of medical research."
+      ],
+      "images": [],
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "Isometric Force Measurement Device",
+      "date": "03/2022",
+      "keywords": ["Python", "Excel", "Data Analysis", "Software Development"],
+      "description": [
+        "This project, developed during my role at Lucid as part of an Innovate UK-funded initiative, aimed to create a novel force measurement platform tailored for elite athletic performance analysis. I contributed across four key areas: testing, data analysis, applied research, and technical support — working closely with stakeholders and end users to ensure the system was effective, accurate, and practical for real-world use.",
+
+        "In the testing phase, I led early-stage evaluations of prototype devices to improve usability and establish consistent procedures for capturing reliable data. A major focus was determining optimal body positions and configurations during testing. Recognising setup as a key factor in data repeatability, I developed a setup algorithm based on anthropometric ratios and CAD modelling to standardise the configuration process for users of varying heights.",
+
+        "I developed a secure web application using Flask, SQLite and Chart.js to present data from testing to project stakeholders, potential end users and Innovate UK assessors. This application allowed for interactive data visualisation, enhancing user experience and facilitating informed decision-making. The app also included user authentication to ensure data security and privacy.",
+
+        "My research efforts focused on investigating the biomechanics of running. I used wearable IMUs and high-speed video to capture running gait and kinematics at varying speeds. This work helped relate device outputs to real-world performance parameters, informing both setup recommendations and future academic studies. These findings were instrumental in bridging lab-based data with real-use athletic scenarios.",
+
+        "Drawing on my detailed understanding of the device, I provided technical support for its use in external research, including studies by the University of Salford and Leicester City Football Club. I led live demonstrations and assisted academic users with both hardware and software. The University of Salford’s MRes study, which I supported, found strong correlations between device output and both gold-standard lab equipment and sprint performance metrics, validating the system's accuracy and practical value."
+    ]
+,
+      "images": [
+                "/static/images/leicester-demo.jpg", 
+                "/static/images/biostrain-web.png",
+                "/static/images/sprint-gait.jpg",
+                "/static/images/setup-plot.png"
+            ],
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Software Testing of Medical Device App",
+      "date": "06/2022",
+      "keywords": ["Software Testing", "Excel", "Communication", "Regulatory Compliance"],
+      "description": [
+        "Developed and executed a test plan aligned with ISO 14971 to ensure app compliance, identifying critical issues prior to release."
+      ],
+      "images": [],
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Device Auto-Setup Algorithm",
+      "date": "09/2022",
+      "keywords": ["CAD", "Excel", "Python", "Problem Solving", "Anthropometric Ratios", "Running Gait Analysis"],
+      "description": [
+        "Created an algorithm to automate device setup based on user height, enhancing usability and accuracy through integration into the production app."
+      ],
+      "images": [],
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Data Visualisation Web Application for Strength Testing Device",
+      "date": "04/2023",
+      "keywords": ["Flask", "JavaScript", "HTML", "CSS", "Jinja", "SQLite", "Full-Stack Web Development", "User Experience"],
+      "description": [
+        "Developed a secure web application to display strength testing data interactively, incorporating user authentication and stakeholder feedback."
+      ],
+      "images": [],
+      "featured": false
+    },
+    {
+      "id": 7,
+      "title": "Engineering Analysis of Reciprocating Saw for Plaster Cast Removal",
+      "date": "09/2023",
+      "keywords": ["System Modelling", "Python", "FEA", "Mechanics", "DC Motors", "Computational Analysis"],
+      "description": [
+        "Modeled a reciprocating saw mechanism to study the effects of component variations, performing FEA and motion analysis to optimize design."
+      ],
+      "images": [],
+      "featured": true
+    },
+    {
+      "id": 8,
+      "title": "Tooling Design and Manufacture for Polyurethane Casting",
+      "date": "02/2024",
+      "keywords": ["SolidWorks", "SLA 3D Printing", "Tooling Design", "Vacuum Casting", "CAD/CAM", "Prototyping"],
+      "description": [
+        "Designed and produced 3D-printed tooling for in-house polyurethane casting, enhancing manufacturing capabilities and documentation."
+      ],
+      "images": [],
+      "featured": false
+    },
+    {
+      "id": 9,
+      "title": "Manufacture of Pressure Sensing Medical Device for Patient Use",
+      "date": "08/2024",
+      "keywords": ["SLA 3D Printing", "Vacuum Casting", "Vacuum Forming", "Soldering", "Electronics Assembly", "Advanced Manufacturing"],
+      "description": [
+        "Completed production of 20 pressure sensing devices, ensuring compliance with verification criteria and producing necessary documentation."
+      ],
+      "images": [],
+      "featured": false
+    },
+    {
+      "id": 10,
+      "title": "Temperature Regulation in Pressure Sensing Device",
+      "date": "12/2024",
+      "keywords": ["Excel", "Problem Solving", "Design of Experiment", "Data Analysis"],
+      "description": [
+        "Identified and resolved temperature regulation issues affecting pressure readings, implementing firmware changes to improve accuracy by 50%."
+      ],
+      "images": [],
+      "featured": false
+    }
+  ]
+  
