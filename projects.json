@@ -1,31 +1,45 @@
 [
     {
       "id": 1,
-      "title": "Mars Rover Design and Build",
-      "date": "09/2018",
-      "keywords": ["CAD", "Robotics", "Simulation"],
+      "title": "Medical Device User Interface Design",
+      "date": "04/2024",
+      "keywords": ["UI/UX", "Figma", "Communication", "Medical Devices", "Prototyping"],
       "description": [
-        "Designed and built a Mars rover prototype using CAD software. The project involved creating detailed 3D models, simulating the rover's movement on Martian terrain, and testing its capabilities in various scenarios."
+        "As part of a multidisciplinary team at Lucid, I contributed to the design of a user interface for a new medical device. My role involved creating wireframes and interactive prototypes in Figma, collaborating closely with clinicians and end users to ensure the interface was intuitive and met clinical needs. I conducted user testing sessions to gather feedback on usability and iterated on designs based on this input, ensuring the final product was both functional and user-friendly."
       ],
-      "images": [],
+      "images": [
+                "/static/images/magstim-ui.png",
+                "/static/images/magstim-flow.png"
+            ],
       "featured": false
     },
     {
       "id": 2,
       "title": "EPSRC Vacation Award Internship",
       "date": "06/2020",
-      "keywords": ["Academic Research", "MATLAB", "3D Printing", "CAD"],
+      "keywords": ["Academic Research", "Excel", "Data Analysis", "3D Printing", "CAD"],
       "description": [
-        "Explored eddy-current sensor applications for wear detection in joint replacements as part of medical research."
+        "During a summer internship funded by an EPSRC Vacation Bursary at the University of Leeds’ Institute of Functional Surfaces, I worked on a research project investigating a novel inductive sensing technique to detect wear in non-conductive materials used in joint replacements. The project aimed to explore early-stage feasibility and inform future experimental development.",
+
+        "I began by conducting a review of academic literature covering wear mechanisms and existing sensing techniques in total joint replacements, with a focus on non-conductive materials like UHMWPE. This background research provided context for the novel inductive approach and helped guide test design. I also summarised relevant findings to support protocol planning for lab work, ensuring the project was grounded in current scientific understanding.",
+
+        "In collaboration with PhD students, I helped develop and test a sensor calibration procedure to establish baseline inductance readings. I analysed experimental data from previous tests in Excel, identifying trends and inconsistencies across batches of sensors. This work informed adjustments to calibration protocols and helped ensure measurement reliability before more complex testing.",
+
+        "I assembled a working electrical circuit using inductive sensor PCBs, a breadboard, NI MyRIO controller, and LabVIEW software to visualise live sensor readings. I designed and ran simple proof-of-concept experiments to demonstrate that sensor inductance reliably decreased when a metal target embedded within a polymer material was exposed—validating the basic principle of the sensing method.",
+
+        "To simulate wear in a controlled setting, I designed and 3D printed custom PEEK fixtures for mounting the sensors onto a UMT tribometer. I set up and conducted sliding wear tests and used Excel to analyse the output. Some tests showed a consistent drop in inductance over time, indicating successful detection of material removal, although results also highlighted sensitivity to noise and the need for further refinement."
       ],
-      "images": [],
-      "featured": false
+      "images": [
+                "/static/images/hip-replacement.jpg",
+                "/static/images/epsrc-internship.png"
+            ],
+      "featured": true
     },
     {
       "id": 3,
       "title": "Isometric Force Measurement Device",
       "date": "03/2022",
-      "keywords": ["Python", "Excel", "Data Analysis", "Software Development"],
+      "keywords": ["Python", "Excel", "Data Analysis", "Web Development", "Technical Support"],
       "description": [
         "This project, developed during my role at Lucid as part of an Innovate UK-funded initiative, aimed to create a novel force measurement platform tailored for elite athletic performance analysis. I contributed across four key areas: testing, data analysis, applied research, and technical support — working closely with stakeholders and end users to ensure the system was effective, accurate, and practical for real-world use.",
 
@@ -40,7 +54,7 @@
 ,
       "images": [
                 "/static/images/leicester-demo.jpg", 
-                "/static/images/biostrain-web.png",
+                "/static/images/biostrain-web.jpg",
                 "/static/images/sprint-gait.jpg",
                 "/static/images/setup-plot.png"
             ],
@@ -48,80 +62,81 @@
     },
     {
       "id": 4,
-      "title": "Software Testing of Medical Device App",
-      "date": "06/2022",
+      "title": "Pressure Sensing Medical System",
+      "date": "06/2024",
       "keywords": ["Software Testing", "Excel", "Communication", "Regulatory Compliance"],
       "description": [
-        "Developed and executed a test plan aligned with ISO 14971 to ensure app compliance, identifying critical issues prior to release."
+        "As part of a multidisciplinary team at Lucid, I worked on the in-house development of a pressure sensing system used in anorectal manometry and biofeedback procedures. This ISO 13485-compliant medical device includes a pressure-sensing probe, charging dock, and calibration unit, and has been deployed to medical centres across the UK. My responsibilities covered design, manufacturing, documentation, and testing of the system throughout its development lifecycle.",
+
+        "I implemented design changes to key system components using SOLIDWORKS, incorporating feedback from clinicians and end users. I designed and fabricated tooling for both vacuum casting (polyurethane and silicone parts) and vacuum forming (ABS components), enabling repeatable, high-quality production of housing and functional elements. These design changes improved usability and manufacturability, playing a vital role in preparing the system for clinical use.",
+
+        "To fulfil a commercial purchase order, I led the hands-on manufacture of 20 patient-ready systems. This included the complete assembly of pressure probes, calibration units, and docking stations using techniques such as 3D printing, laser cutting, vacuum casting, and soldering. I also performed both mechanical and electronic assembly, ensuring all units met stringent functional and safety standards before deployment.",
+
+        "Maintaining high-quality documentation was a key part of my role. I updated and organised BOMs, production records, technical drawings, and design verification and validation reports to meet ISO 13485 standards. I also worked with project leads to streamline document management processes, ensuring audit readiness. This documentation has consistently met the rigorous standards of our annual ISO 13485 audits without issue.",
+
+        "I conducted a range of standardised tests on the system as part of design verification and validation. These included accelerated aging studies, material compatibility assessments, and risk-based software testing aligned with ISO 14971. The testing results provided evidence of the system’s reliability, supporting its safe and effective use in clinical settings and informing further development decisions."
       ],
-      "images": [],
-      "featured": false
+
+      "images": [
+                "/static/images/anisys-system.png", 
+                "/static/images/keymat-tool.png",
+                "/static/images/verification.png",
+                "/static/images/overmould.png"
+            ],
+      "featured": true
     },
     {
       "id": 5,
-      "title": "Device Auto-Setup Algorithm",
-      "date": "09/2022",
-      "keywords": ["CAD", "Excel", "Python", "Problem Solving", "Anthropometric Ratios", "Running Gait Analysis"],
-      "description": [
-        "Created an algorithm to automate device setup based on user height, enhancing usability and accuracy through integration into the production app."
-      ],
-      "images": [],
-      "featured": false
-    },
-    {
-      "id": 6,
-      "title": "Data Visualisation Web Application for Strength Testing Device",
-      "date": "04/2023",
-      "keywords": ["Flask", "JavaScript", "HTML", "CSS", "Jinja", "SQLite", "Full-Stack Web Development", "User Experience"],
-      "description": [
-        "Developed a secure web application to display strength testing data interactively, incorporating user authentication and stakeholder feedback."
-      ],
-      "images": [],
-      "featured": false
-    },
-    {
-      "id": 7,
       "title": "Engineering Analysis of Reciprocating Saw for Plaster Cast Removal",
       "date": "09/2023",
       "keywords": ["System Modelling", "Python", "FEA", "Mechanics", "DC Motors", "Computational Analysis"],
       "description": [
-        "Modeled a reciprocating saw mechanism to study the effects of component variations, performing FEA and motion analysis to optimize design."
+        "This project, carried out in my current role at Lucid, focused on developing a next-generation reciprocating saw and vacuum system for plaster cast removal. Working with a commercial client, my contributions spanned mechanical analysis, motor selection, and structural evaluation of key components — supporting the design team in making informed, data-driven decisions across the product development cycle.",
+
+        "To analyse the saw’s core mechanical system, I developed a Python-based mathematical model of the eccentric cam mechanism. This allowed for theoretical calculation of displacement, velocity, and acceleration profiles at various operating speeds. These outputs helped inform design parameters such as eccentricity and shaft offset, guiding decisions to ensure sufficient range of blade motion while minimising stress on critical components. The model also supported analysis of counterbalancing strategies to reduce reactive forces on the motor shaft and housing.",
+
+        "For motor selection, I assessed multiple DC motor options by extracting torque-speed data from technical datasheets and plotting operational curves. I calculated the expected current draw under load and cross-referenced it with the motor’s thermal limits to avoid overheating. This analysis ensured that the final motor choice would reliably meet the torque and speed requirements of the saw during prolonged operation without risk of failure.",
+
+        "I conducted finite element analysis (FEA) on polypropylene components designed to secure the vacuum tube during storage. The goal was to determine the required insertion/removal force and confirm that stresses remained within the material’s elastic range. By following FEA best practices for polymer analysis, I provided confidence in the robustness of the design and supported the decision to proceed with tooling for mass production, helping accelerate the project timeline.",
+
+        "Overall, my work contributed to critical design decisions that improved the mechanical performance and manufacturability of the product. The combination of system-level modelling and detailed component analysis enabled the team to move forward with confidence in both function and feasibility, ensuring the product met operational requirements and was ready for scaled manufacturing."
       ],
-      "images": [],
+      "images": [
+                "/static/images/medezine-analysis.png", 
+                "/static/images/maxon-motor.png",
+                "/static/images/clip-fea.png"
+            ],
       "featured": true
     },
     {
-      "id": 8,
-      "title": "Tooling Design and Manufacture for Polyurethane Casting",
-      "date": "02/2024",
-      "keywords": ["SolidWorks", "SLA 3D Printing", "Tooling Design", "Vacuum Casting", "CAD/CAM", "Prototyping"],
+      "id": 6,
+      "title": "SOLIDWORKS Associate Certification",
+      "date": "01/2018",
+      "keywords": ["CAD", "Mechanical Engineering", "Product Design"],
       "description": [
-        "Designed and produced 3D-printed tooling for in-house polyurethane casting, enhancing manufacturing capabilities and documentation."
+        "I earned my Certified SOLIDWORKS Associate (CSWA) certification while studying at the University of Leeds, following formal training in CAD fundamentals. The certification demonstrates my ability to create and interpret 3D models, assemblies, and 2D engineering drawings using SOLIDWORKS. Since then, I’ve continued to apply and expand these skills in my role as a Design Engineer—developing components, tooling, and prototypes across a range of medical and mechanical systems. The certification laid a strong foundation for my ongoing work in design for manufacture, precision modelling, and technical documentation."
       ],
-      "images": [],
+      "images": [
+                "/static/images/solidworks-certificate.png",
+                "/static/images/uav-drawings.jpg"],
       "featured": false
     },
     {
-      "id": 9,
-      "title": "Manufacture of Pressure Sensing Medical Device for Patient Use",
-      "date": "08/2024",
-      "keywords": ["SLA 3D Printing", "Vacuum Casting", "Vacuum Forming", "Soldering", "Electronics Assembly", "Advanced Manufacturing"],
+      "id": 7,
+      "title": "Fixed wing UAV Design",
+      "date": "10/2020",
+      "keywords": ["CAD", "Mechanical Engineering", "Aircraft Design", "Stability Analysis"],
       "description": [
-        "Completed production of 20 pressure sensing devices, ensuring compliance with verification criteria and producing necessary documentation."
+        "As part of a university group project, I helped design an all-electric, fixed-wing UAV for urban building surveillance. The aircraft had to meet specific mission criteria, including autonomous operation, stable low-speed performance, and compatibility with CAA and FAR guidelines. The project was split into preliminary and detailed design phases.", 
+        "I contributed to concept generation by developing a mission profile based on project requirements, producing early CAD layouts, and proposing component options such as batteries and payload cameras. I also performed weight estimations and ensured regulatory compliance was considered early in the design process.",
+        "Working in a small group, I helped deliver our preliminary concept presentation to the wider class. Our design was selected to progress into the detailed design stage, where I took a more focused role in the aircraft’s stability and control systems.",
+        "I led the stability and control analysis, determining the control surface sizing, centre of mass location, and stick-fixed neutral point. I worked closely with team members in propulsion, aerodynamics, and systems to ensure the aircraft would remain stable across the full mission profile.",
+        "Our final design met all core mission specifications and demonstrated stable performance throughout the required flight envelope. This project gave me practical experience in multi-disciplinary collaboration, regulatory awareness, and technical communication—skills I continue to apply in professional design environments."
       ],
-      "images": [],
-      "featured": false
-    },
-    {
-      "id": 10,
-      "title": "Temperature Regulation in Pressure Sensing Device",
-      "date": "12/2024",
-      "keywords": ["Excel", "Problem Solving", "Design of Experiment", "Data Analysis"],
-      "description": [
-        "Identified and resolved temperature regulation issues affecting pressure readings, implementing firmware changes to improve accuracy by 50%."
-      ],
-      "images": [],
-      "featured": false
+      "images": [
+                "/static/images/surveillance-uav.png",
+                "/static/images/uav-drawings.jpg"],
+      "featured": true
     }
   ]
   

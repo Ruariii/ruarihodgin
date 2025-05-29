@@ -21,7 +21,7 @@ class ProjectModel:
 
     @classmethod
     def load_db(cls):
-        with open('projects.json', 'r') as projects_file:
+        with open('projects.json', 'r', encoding='utf-8') as projects_file:
             projects = json.load(projects_file)
             cls.db.clear()
             for c in projects:

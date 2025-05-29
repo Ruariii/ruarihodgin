@@ -25,22 +25,22 @@
     {% endif %}
 
     <!-- Project Description -->
-    <div class="space-y-4 mb-4">
+    <div class="prose dark:prose-invert max-w-none mb-8">
         {% for paragraph in project.description %}
-            <p class="text-gray-700 dark:text-gray-300">{{ paragraph }}</p>
+            <p>{{ paragraph }}</p>
         {% endfor %}
     </div>
 
     <!-- Project Images -->
     {% if project.images %}
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
         {% for img in project.images %}
-            <div class="aspect-w-16 aspect-h-9 relative">
-            <img 
-                src="{{ img }}" 
-                alt="{{ project.title }} image" 
-                class="w-full h-full object-cover rounded-lg shadow-md"
-            >
+            <div class="aspect-[16/9] overflow-hidden rounded-lg shadow-md group">
+                <img 
+                    src="{{ img }}" 
+                    alt="{{ project.title }} image" 
+                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                >
             </div>
         {% endfor %}
     </div>
