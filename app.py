@@ -33,6 +33,7 @@ def projects():
 def about():
     # Pass all projects so we can show their images in the carousel
     all_projects = model.all()
+    all_projects.sort(key=lambda p: datetime.strptime(p.date, "%m/%Y"), reverse=True)
     return render_template('about.html', projects=all_projects)
 
     
