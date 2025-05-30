@@ -3,9 +3,17 @@
       "id": 1,
       "title": "Medical Device User Interface Design",
       "date": "04/2024",
-      "keywords": ["UI/UX", "Figma", "Communication", "Medical Devices", "Prototyping"],
+      "keywords": ["UI/UX", "Figma", "Communication", "Medical Devices"],
       "description": [
-        "As part of a multidisciplinary team at Lucid, I contributed to the design of a user interface for a new medical device. My role involved creating wireframes and interactive prototypes in Figma, collaborating closely with clinicians and end users to ensure the interface was intuitive and met clinical needs. I conducted user testing sessions to gather feedback on usability and iterated on designs based on this input, ensuring the final product was both functional and user-friendly."
+        "As part of a multidisciplinary team, I contributed to the redesign of the user interface for a medical system used in EEG monitoring and transcranial magnetic stimulation (TMS). The goal was to improve usability, streamline workflows, and modernise the interface based on technical requirements and user feedback.",
+
+        "I began by reviewing customer-supplied technical specifications and closely analysing the existing user interface to understand system functionality. I also attended stakeholder briefings to identify user pain points and areas where the interface could be improved.",
+
+        "Working with the project manager, I helped define the new system structure using wireframes and a flowchart to represent the user journey. This visual framework laid the foundation for interface redesign and ensured alignment with clinical and technical expectations.",
+
+        "Using Figma, I designed a high-fidelity, clickable prototype based on the new architecture. I developed a style guide and created reusable components to ensure design consistency and support future scalability by the development team.",
+
+        "The prototype was used in a formative usability study with expert users to gather insights and validate interface decisions. Both the flowchart and Figma prototype were handed over to software developers as a reference for building the production software."
       ],
       "images": [
                 "/static/images/magstim-ui.png",
@@ -17,7 +25,7 @@
       "id": 2,
       "title": "EPSRC Vacation Award Internship",
       "date": "06/2020",
-      "keywords": ["Academic Research", "Excel", "Data Analysis", "3D Printing", "CAD"],
+      "keywords": ["Research", "Excel", "Data Analysis", "3D Printing", "CAD"],
       "description": [
         "During a summer internship funded by an EPSRC Vacation Bursary at the University of Leeds’ Institute of Functional Surfaces, I worked on a research project investigating a novel inductive sensing technique to detect wear in non-conductive materials used in joint replacements. The project aimed to explore early-stage feasibility and inform future experimental development.",
 
@@ -39,7 +47,7 @@
       "id": 3,
       "title": "Isometric Force Measurement Device",
       "date": "03/2022",
-      "keywords": ["Python", "Excel", "Data Analysis", "Web Development", "Technical Support"],
+      "keywords": ["Python", "Excel", "Web Development", "Research", "Technical Support"],
       "description": [
         "This project, developed during my role at Lucid as part of an Innovate UK-funded initiative, aimed to create a novel force measurement platform tailored for elite athletic performance analysis. I contributed across four key areas: testing, data analysis, applied research, and technical support — working closely with stakeholders and end users to ensure the system was effective, accurate, and practical for real-world use.",
 
@@ -64,7 +72,7 @@
       "id": 4,
       "title": "Pressure Sensing Medical System",
       "date": "06/2024",
-      "keywords": ["Software Testing", "Excel", "Communication", "Regulatory Compliance"],
+      "keywords": ["Testing", "CAD", "Communication", "Regulatory Compliance", "Manufacturing"],
       "description": [
         "As part of a multidisciplinary team at Lucid, I worked on the in-house development of a pressure sensing system used in anorectal manometry and biofeedback procedures. This ISO 13485-compliant medical device includes a pressure-sensing probe, charging dock, and calibration unit, and has been deployed to medical centres across the UK. My responsibilities covered design, manufacturing, documentation, and testing of the system throughout its development lifecycle.",
 
@@ -89,7 +97,7 @@
       "id": 5,
       "title": "Engineering Analysis of Reciprocating Saw for Plaster Cast Removal",
       "date": "09/2023",
-      "keywords": ["System Modelling", "Python", "FEA", "Mechanics", "DC Motors", "Computational Analysis"],
+      "keywords": ["System Modelling", "Python", "FEA", "Mechanical Engineering", "DC Motors", "Computational Analysis"],
       "description": [
         "This project, carried out in my current role at Lucid, focused on developing a next-generation reciprocating saw and vacuum system for plaster cast removal. Working with a commercial client, my contributions spanned mechanical analysis, motor selection, and structural evaluation of key components — supporting the design team in making informed, data-driven decisions across the product development cycle.",
 
@@ -136,7 +144,41 @@
       "images": [
                 "/static/images/surveillance-uav.png",
                 "/static/images/uav-drawings.jpg"],
-      "featured": true
+      "featured": false
+    },
+    {
+      "id": 8,
+      "title": "Forward-Swept Wing Optimisation",
+      "date": "01/2021",
+      "keywords": ["Design Optimisation", "Aircraft Design", "Computational Analysis", "Project Management"],
+      "description": [
+        "This Master’s group project, sponsored by ESDU, explored the aerodynamic and structural feasibility of a novel forward-swept crescent wing design for transonic passenger aircraft. The goal was to optimise the wing’s planform to balance aerodynamic efficiency with structural integrity under realistic flight conditions.", 
+        "As project manager, I developed the project plan, created a Gantt chart, and led weekly meetings. I was also responsible for liaising with our university supervisor and the industrial sponsor to ensure alignment between our analysis goals and industry relevance.",
+        "I led the aerodynamic performance assessment using ESDU’s Viscous Full Potential (VFP) method, a fixed-format CFD solver written in FORTRAN. I developed a MATLAB tool to automate the generation of input files, enabling rapid iteration and consistent evaluation across different planform geometries.",
+        "I worked closely with teammates conducting structural analysis to create a coupled aero-structural workflow. This iterative approach allowed us to adjust the aerodynamic shape in response to structural constraints, improving the design’s resistance to aeroelastic distortion while preserving aerodynamic efficiency.",
+        "The project produced a wing configuration that met aerodynamic performance targets while minimising aeroelastic effects. Our automated workflow enabled efficient parametric studies and design optimisation. The final submission received a first-class mark and was praised for both its technical depth and collaborative execution."
+      ],
+      "images": [
+                "/static/images/3d-planform.png"
+              ],
+      "featured": false
+    },
+    {
+      "id": 9,
+      "title": "Scrimba Course: Build a Mobile App with Firebase",
+      "date": "01/2025",
+      "keywords": ["Web Development", "Frontend Development", "Progressive Web App (PWA)", "Firebase"],
+      "description": [
+        "As part of a hands-on course from Scrimba, I built a fully functional shopping list app using HTML, CSS, JavaScript, and Firebase Realtime Database. The app supports real-time data updates and can be installed on mobile devices as a Progressive Web App (PWA)—blurring the line between web and native apps.", 
+        "I designed the interface using responsive HTML and CSS, applying styles to enhance usability across devices. JavaScript was used to manage the app’s logic, including dynamic updates, DOM manipulation, and input validation.",
+        "I integrated Firebase to enable real-time data storage and retrieval. I learned to write Firebase security rules, retrieve and manage unique item IDs, and use the onValue function to display updates live in the UI as they occurred.",
+        "The app allows users to add, display, and delete list items. It was enhanced with accessibility improvements, viewport settings, and a Web App Manifest, allowing users to install it directly onto their home screen like a native app.",
+        "I deployed the application using Netlify, making it publicly accessible and easily shareable. This project deepened my understanding of web application structure, real-time databases, and how to build mobile-friendly experiences using only web technologies."
+      ],
+      "images": [
+                "/static/images/shopping-list.png"
+              ],
+      "featured": false
     }
   ]
   
