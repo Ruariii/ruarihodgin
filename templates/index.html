@@ -9,9 +9,16 @@
     <div>
         <img src="{{ url_for('static', filename='images/profile-pic.jpeg') }}" alt="Ruari Hodgin" class="w-48 h-48 rounded-full object-cover shadow-md mx-auto mb-6">
         <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-blue-900 dark:text-white">Ruari Hodgin (MEng)</h1>
-        <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300">Engineer | Designer | Problem Solver</p>
+        <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6">Engineer | Designer | Problem Solver</p>
+        <br>
+        <!-- Links to About and Projects -->
+        <div class="space-x-4">
+            <a href="/about" class="px-6 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition">About Me</a>
+            <a href="/projects" class="px-6 py-2 bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-white rounded-md shadow hover:bg-gray-400 dark:hover:bg-gray-600 transition">Projects</a>
+        </div>
     </div>
 </section>
+
 
 <!-- About Section -->
 <section class="max-w-3xl mx-auto px-4 md:px-0 py-12">
