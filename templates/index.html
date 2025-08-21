@@ -5,7 +5,7 @@
 {% block content %}
 
 <!-- Hero Section -->
-<section class="flex flex-col items-center justify-center h-screen text-center bg-gradient-to-b from-blue-100 to-white dark:from-gray-800 dark:to-gray-900">
+<section class="flex flex-col items-center justify-center h-[60vh] text-center bg-gradient-to-b from-blue-100 to-white dark:from-gray-800 dark:to-gray-900">
     <div>
         <img src="{{ url_for('static', filename='images/profile-pic.jpeg') }}" alt="Ruari Hodgin" class="w-48 h-48 rounded-full object-cover shadow-md mx-auto mb-6">
         <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-blue-900 dark:text-white">Ruari Hodgin (MEng)</h1>
@@ -28,5 +28,25 @@
         I enjoy building elegant, user-friendly systems that bridge the gap between complex technologies and real-world usability.
     </p>
 </section>
+
+<!-- Project Carousel -->
+<div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-semibold mb-4">Featured Projects</h2>
+    <div class="overflow-x-auto scroll-smooth snap-x snap-mandatory">
+        <div class="flex gap-6">
+            {% for project in projects if project.featured %}
+            <a href="{{ url_for('project_detail', project_id=project.id) }}"
+               class="snap-start flex-shrink-0 w-64 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow hover:shadow-lg transition-shadow duration-300">
+                <img src="{{ project.images[0] }}" alt="{{ project.title }}" class="h-40 w-full object-cover">
+                <div class="p-3">
+                    <h3 class="font-semibold text-lg">{{ project.title }}</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">{{ project.date }}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
 
 {% endblock %}

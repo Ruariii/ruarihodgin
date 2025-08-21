@@ -12,7 +12,10 @@ model.load_db()
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    # Pass all projects so we can show their images in the carousel
+    all_projects = model.all()
+    all_projects.sort(key=lambda p: datetime.strptime(p.date, "%m/%Y"), reverse=True)
+    return render_template('index.html', projects=all_projects)
 
 @app.route("/projects")
 def projects():
