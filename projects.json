@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "SOLIDWORKS Associate Certification",
+    "title": "🛠️📄 SOLIDWORKS Associate Certification",
     "date": "01/2018",
     "keywords": ["CAD", "Mechanical Engineering", "Product Design"],
     "description": [
@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "title": "EPSRC Vacation Award Internship",
+    "title": "🔬🧪 EPSRC Vacation Award Internship",
     "date": "06/2020",
     "keywords": ["Research", "Excel", "Data Analysis", "3D Printing", "CAD"],
     "description": [
@@ -33,7 +33,7 @@
   },
   {
     "id": 3,
-    "title": "Fixed wing UAV Design",
+    "title": "✈️🛩️ Fixed wing UAV Design",
     "date": "10/2020",
     "keywords": ["CAD", "Mechanical Engineering", "Aircraft Design", "Stability Analysis"],
     "description": [
@@ -51,7 +51,7 @@
   },
   {
     "id": 4,
-    "title": "Forward-Swept Wing Optimisation",
+    "title": "🦅📈 Forward-Swept Wing Optimisation",
     "date": "01/2021",
     "keywords": ["Design Optimisation", "Aircraft Design", "Computational Analysis", "Project Management"],
     "description": [
@@ -68,7 +68,7 @@
   },
   {
     "id": 5,
-    "title": "Isometric Force Measurement Device",
+    "title": "🏋️‍♂️📊 Isometric Force Measurement Device",
     "date": "03/2022",
     "keywords": ["Python", "Excel", "Web Development", "Research", "Technical Support"],
     "description": [
@@ -88,7 +88,7 @@
   },
   {
     "id": 6,
-    "title": "Engineering Analysis of Reciprocating Saw for Plaster Cast Removal",
+    "title": "🖥️⚙️ Engineering Analysis of Reciprocating Saw for Plaster Cast Removal",
     "date": "09/2023",
     "keywords": ["System Modelling", "Python", "FEA", "Mechanical Engineering", "DC Motors", "Computational Analysis"],
     "description": [
@@ -107,7 +107,7 @@
   },
   {
     "id": 7,
-    "title": "Sojourno – Travel Blog App",
+    "title": "🌍✈️ Sojourno – Travel Blog App",
     "date": "04/2024",
     "keywords": ["Web Development", "Frontend Development", "Cloud Storage", "Firebase"],
     "description": [
@@ -131,7 +131,7 @@
   },
   {
     "id": 8,
-    "title": "Medical Device User Interface Design",
+    "title": "🧑‍⚕️🖥️ Medical Device User Interface Design",
     "date": "05/2024",
     "keywords": ["UI/UX", "Figma", "Communication", "Medical Devices"],
     "description": [
@@ -149,7 +149,7 @@
   },
   {
     "id": 9,
-    "title": "Pressure Sensing Medical System",
+    "title": "💉📏 Pressure Sensing Medical System",
     "date": "09/2024",
     "keywords": ["Testing", "CAD", "Communication", "Regulatory Compliance", "Manufacturing"],
     "description": [
@@ -169,7 +169,7 @@
   },
   {
     "id": 10,
-    "title": "Scrimba Course: Build a Mobile App with Firebase",
+    "title": "📱🛒 Scrimba Course: Build a Mobile App with Firebase",
     "date": "01/2025",
     "keywords": ["Web Development", "Frontend Development", "Progressive Web App (PWA)", "Firebase"],
     "description": [
@@ -181,6 +181,22 @@
     ],
     "images": [
       "/static/images/shopping-list.png"
+    ],
+    "featured": false
+  },
+  {
+    "id": 11,
+    "title": "📱💹 Crypto Signals App",
+    "date": "08/2025",
+    "keywords": ["Web Development", "Frontend Development", "Progressive Web App (PWA)", "Firebase"],
+    "description": [
+      "I built a simple mobile app that helps users track cryptocurrency momentum and decide when to BUY or TAKE NO ACTION. The app analyzes RSI (Relative Strength Index) data to generate a custom “buy score”, giving users a quick signal on market trends.",
+      "The backend is powered by Python (FastAPI), pulling live data from the Polygon API and leveraging the OpenAI API to generate human-readable performance reports. On the frontend, I used React Native + Expo to create a responsive mobile-first design that works seamlessly on both iOS and web.",
+      "⚠️ Disclaimer: This project is for learning and fun only — not real financial advice (unless you want to lose some money)."
+    ],
+    "images": [
+      "/static/images/cryptomate-report.png",
+      "/static/images/cryptomate-home.png"
     ],
     "featured": false
   }
