@@ -124,8 +124,8 @@
       "This project was primarily a learning exercise to strengthen my ability to build full-stack applications with React and Firebase. It gave me hands-on experience with frontend development, authentication, database integration, and cloud storage, and demonstrated how these technologies can be combined into a user-friendly web application. I had a lot of fun uploading travel photos and imagining future trips while building it!"
     ],
     "images": [
-      "/static/images/soj-feed.png",
-      "/static/images/soj-login.png"
+      "/static/images/soj-feed.PNG",
+      "/static/images/soj-login.PNG"
     ],
     "featured": false
   },
